@@ -29,24 +29,26 @@ namespace Planner
             megalopolis.NewMayor("Ken Moore");
 
 
-            Console.WriteLine($@"
-                {megalopolis.getCityName()}
-                ---------------------------------
-                established in {megalopolis.getYearEstablished()}
-                Mayor : {megalopolis.getMayor()}
-                has following buildings ---
-            ");
-            foreach (Building building in megalopolis.Buildings)
-            {
-                Console.WriteLine($@"
-                    {building.getAddress()}
-                    ----------------------------------------------
-                    Designed By : {building.getDesigner()}
-                    Constructed on {building.getDateConstructed()}
-                    Owned by {building.getOwner()}
-                    {building.Volume} cubic meters of space
-                 ");
-            }
+            // Console.WriteLine($@"
+            //     {megalopolis.getCityName()}
+            //     ---------------------------------
+            //     established in {megalopolis.getYearEstablished()}
+            //     Mayor : {megalopolis.getMayor()}
+            //     has following buildings ---
+            // ");
+
+            Console.WriteLine(megalopolis);
+            // foreach (Building building in megalopolis.Buildings)
+            // {
+            //     Console.WriteLine($@"
+            //         {building.getAddress()}
+            //         ----------------------------------------------
+            //         Designed By : {building.getDesigner()}
+            //         Constructed on {building.getDateConstructed()}
+            //         Owned by {building.getOwner()}
+            //         {building.Volume} cubic meters of space
+            //      ");
+            // }
 
         }
     }
